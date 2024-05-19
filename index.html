@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <title>Minimal blog card by @lorddesert</title>
+
+    <style>
+        :root {
+            --black: #20293A;
+            --light-black: #6C727F;
+            --gray: #E5EAF0;
+            --white: #FFFFFF;
+            --whiteish: #FAFAF9;
+            --purple: #883AE1;
+            --light-purple: #E6D6FC;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        body {
+            min-height: 100dvh;
+            display: grid;
+            place-content: center;
+        }
+
+        .card {
+            font-family: "Sora", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-optical-sizing: auto;
+            padding: 16px 16px 20px 16px;
+            max-width: 336px;
+            border-radius: 15px;
+            box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+
+            header {
+                margin-bottom: 1rem;
+            }
+
+            img {
+                max-width: 336px;
+                border-radius: 15px;
+
+            }
+
+            p {
+                font-size: 0.875rem;
+                color: var(--light-black);
+
+            }
+
+            .title {
+                font-size: 1.125rem;
+                margin-bottom: 6px;
+            }
+
+            main {
+                margin-bottom: 20px;
+            }
+
+            footer {
+                border-top: 1px solid var(--gray);
+                font-size: 0.75rem;
+                color: var(--light-black);
+                padding-top: .5rem;
+
+                p {
+                    margin: inherit;
+                    padding: inherit;
+                }
+            }
+
+            .tag {
+                border-radius: 35px;
+                font-size: 0.625rem;
+                color: var(--purple);
+                background-color: var(--light-purple);
+                padding: 6px 16px;
+                margin-bottom: 16px;
+                font-weight: bold;
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article class="card">
+        <header>
+            <img src="./cactus_img.jpg" alt="cactus image with a soft pink background">
+        </header>
+        <small class="tag">Design</small>
+        <main>
+            <h3 class="title">Embracing Minimalism</h3>
+            <p>From minimalist sculptures to minimalist paintings, this blog will inspire you to appreciate the beauty
+                that lies in simplicity.</p>
+        </main>
+        <footer>
+            <p>Annie Spratt</p>
+        </footer>
+    </article>
+</body>
+
+</html>
